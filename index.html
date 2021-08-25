@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeInfo - FTT - N1</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+
+</head>
+
+
+
+<body>
+    <div class="row">
+        <div class="column">
+            <h1>PokéInfo</h1>
+            <p><button id="btn" onclick="ligaTudo(); callFor();">Get Pokemon Types</button></p>
+            <p>
+                <table class="ligaki">
+                    <thead>
+                        <tr class="ligaki">
+                            <th>Tipo</th>
+                            <th>Qtd Pokemon</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableData">
+                    </tbody>
+                </table>
+            </p>
+            <p class="ligaki">Clique no gráfico para mais informações</p>
+        </div>
+
+        <div class="column">
+
+            <canvas id="myChart" height="600" width="600"></canvas>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
